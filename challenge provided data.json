@@ -1,0 +1,107 @@
+{
+    "name": "V-NECH BASIC SHIRT",
+    "salesUnit": 100,
+    "stock": [
+        {
+            "stockType": "MEDIUM",
+            "amount": 9
+        },
+        {
+            "stockType": "SMALL",
+            "amount": 4
+        }
+    ]
+}
+
+{
+    "name": "CONTRASTING FABRIC T-SHIRT",
+    "salesUnit": 50,
+    "stock": [
+        {
+            "stockType": "SMALL",
+            "amount": 35
+        },
+        {
+            "stockType": "MEDIUM",
+            "amount": 9
+        },
+        {
+            "stockType": "LARGE",
+            "amount": 9
+        }
+    ]
+}
+
+
+{
+    "name": "RAISED PRINT T-SHIRT",
+    "salesUnit": 80,
+    "stock": [
+        {
+            "stockType": "SMALL",
+            "amount": 20
+        },
+        {
+            "stockType": "MEDIUM",
+            "amount": 2
+        },
+        {
+            "stockType": "LARGE",
+            "amount": 20
+        }
+    ]
+}
+
+
+{
+    "name": "PLEATED T-SHIRT",
+    "salesUnit": 3,
+    "stock": [
+        {
+            "stockType": "SMALL",
+            "amount": 25
+        },
+        {
+            "stockType": "MEDIUM",
+            "amount": 30
+        },
+        {
+            "stockType": "LARGE",
+            "amount": 10
+        }
+    ]
+}
+
+
+{
+    "name": "CONTRASTING LACE T-SHIRT",
+    "salesUnit": 650,
+    "stock": [
+        {
+            "stockType": "MEDIUM",
+            "amount": 1
+        }
+    ]
+}
+
+
+{
+    "name": "SLOGAN T-SHIRT",
+    "salesUnit": 20,
+    "stock": [
+        {
+            "stockType": "SMALL",
+            "amount": 9
+        },
+        {
+            "stockType": "MEDIUM",
+            "amount": 2
+        },
+        {
+            "stockType": "LARGE",
+            "amount": 5
+        }
+    ]
+}
+
+

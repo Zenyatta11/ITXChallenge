@@ -1,17 +1,13 @@
-package com.zenyatta.challenge.avature.model;
+package com.zenyatta.challenge.inditex.model;
 
-import com.zenyatta.challenge.avature.service.EntityInterceptor;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
-import jakarta.persistence.EntityListeners;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
-import jakarta.persistence.JoinTable;
-import jakarta.persistence.ManyToMany;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import java.util.Set;
 import lombok.AllArgsConstructor;
@@ -24,8 +20,7 @@ import lombok.NoArgsConstructor;
 @EqualsAndHashCode(callSuper = false)
 @Builder(toBuilder = true)
 @Entity
-@Table(name = "job_postings")
-@EntityListeners(EntityInterceptor.class)
+@Table(name = "items")
 @NoArgsConstructor
 @AllArgsConstructor
 public class Item {
@@ -39,10 +34,9 @@ public class Item {
     private String name;
 
     @Column(name = "sales_unit", nullable = false)
-    private Long sales;
+    private Long salesUnit;
 
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "stock_id")
-    private Stock stock;
-
+    @OneToMany(cascade = CascadeType.REMOVE)
+    @JoinColumn(name = "stock_item_id")
+    private Set<Stock> stock;
 }
